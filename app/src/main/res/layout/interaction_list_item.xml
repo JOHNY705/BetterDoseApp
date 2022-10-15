@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:gravity="center_horizontal|top">
+
+    <TextView
+        android:id="@+id/tvFirstDrug"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginEnd="7dp"
+        tools:text="oxycodone" />
+    <TextView
+        android:id="@+id/tvSecondDrug"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginEnd="7dp"
+        tools:text="vinorelbine" />
+    <TextView
+        android:id="@+id/tvInteraction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        tools:text="Lorem ipsum dolor sit amet" />
+</LinearLayout>

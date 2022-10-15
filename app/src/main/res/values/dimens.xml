@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_screen_h1">27sp</dimen>
+    <dimen name="text_input_layout_bottom_margin">8dp</dimen>
+    <dimen name="text_view_linear_layout_margin_right">5dp</dimen>
+    <dimen name="login_screen_h2">25sp</dimen>
+    <dimen name="login_screen_logo_size">104dp</dimen>
+    <dimen name="padding_login_register_container">24dp</dimen>
+    <dimen name="info_text_size">36sp</dimen>
+    <dimen name="corners_round_radius">8dp</dimen>
+    <dimen name="stroke_width">2dp</dimen>
+    <dimen name="search_padding">8dp</dimen>
+    <dimen name="shape_padding">15dp</dimen>
+    <dimen name="layout_padding_top">40dp</dimen>
+    <dimen name="et_margin_horizontal">36dp</dimen>
+    <dimen name="et_text_size">15sp</dimen>
+    <dimen name="search_result_height">350dp</dimen>
+    <dimen name="container_padding">20dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="element_margin">15dp</dimen>
+    <dimen name="add_button_width">170dp</dimen>
+    <dimen name="add_button_height">50dp</dimen>
+    <dimen name="diary_button_width">140dp</dimen>
+    <dimen name="diary_button_height">50dp</dimen>
+    <dimen name="scroll_view_search_height">210dp</dimen>
+    <dimen name="view_margin">5dp</dimen>
+    <dimen name="horizontal_rule_height">2dp</dimen>
+    <dimen name="title_text_size">22sp</dimen>
+    <dimen name="tv_bottom_margin">10dp</dimen>
+    <dimen name="card_margin_horizontal">3dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="nav_item_icon_size">40dp</dimen>
+    <dimen name="table_column_margin">10dp</dimen>
+</resources>

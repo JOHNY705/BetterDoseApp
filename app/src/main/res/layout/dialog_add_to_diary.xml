@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/custom_medicine_to_diary_dialog_outline"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Medication to Diary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication: "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"/>
+
+            <TextView
+                android:id="@+id/add_to_diary_tv_brand_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Low Dose Aspirin Enteric Safety-Coated"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:id="@+id/add_to_diary_tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DESCRIPTION Ibuprofen tablets USP contain the active ingredient ibuprofen, which is (±) - 2 - ( p - isobutylphenyl) propionic acid. Ibuprofen is a white to off-white, crystalline powder with a melting point of 74 to 77°C and is very soluble in alcohol, in methanol, in acetone and in chloroform, slightly soluble in ethyl acetate, practically insoluble in water. The structural formula is represented below: Ibuprofen tablets USP, a nonsteroidal anti-inflammatory drug (NSAID), is available in 400 mg, 600 mg, and 800 mg tablets for oral administration. Inactive ingredients: colloidal silicon dioxide, croscarmellose sodium, microcrystalline cellulose, polyethylene glycol, polyvinyl alcohol-part. hydrolyzed, povidone, stearic acid, talc and titanium dioxide. chemical Structure"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dosage:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:id="@+id/add_to_diary_tv_dosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DOSAGE AND ADMINISTRATION Carefully consider the potential benefits and risks of ibuprofen tablets and other treatment options before deciding to use ibuprofen tablets. Use the lowest effective dose for the shortest duration consistent with individual patient treatment goals (see WARNINGS ). After observing the response to initial therapy with ibuprofen tablets, the dose and frequency should be adjusted to suit an individual patient's needs. Do not exceed 3200 mg total daily dose. If gastrointestinal complaints occur, administer ibuprofen tablets with meals or milk. Rheumatoid arthritis and osteoarthritis, including flare-ups of chronic disease Suggested Dosage: 1200 mg to 3200 mg daily (300 mg qid; 400 mg, 600 mg or 800 mg tid or qid). Individual patients may show a better response to 3200 mg daily, as compared with 2400 mg, although in well-controlled clinical trials patients on 3200 mg did not show a better mean response in terms of efficacy. Therefore, when treating patients with 3200 mg/day, the physician should observe sufficient increased clinical benefits to offset potential increased risk. The dose should be tailored to each patient, and may be lowered or raised depending on the severity of symptoms either at time of initiating drug therapy or as the patient responds or fails to respond. In general, patients with rheumatoid arthritis seem to require higher doses of ibuprofen tablets than do patients with osteoarthritis. The smallest dose of ibuprofen tablets that yields acceptable control should be employed. A linear blood level doseresponse relationship exists with single doses up to 800 mg (See CLINICAL PHARMACOLOGY for effects of food on rate of absorption). The availability of three tablet strengths facilitates dosage adjustment. In chronic conditions, a therapeutic response to therapy with ibuprofen tablets is sometimes seen in a few days to a week but most often is observed by two weeks. After a satisfactory response has been achieved, the patient's dose should be reviewed and adjusted as required. Mild to moderate pain: 400 mg every 4 to 6 hours as necessary for relief of pain. In controlled analgesic clinical trials, doses of ibuprofen tablets greater than 400 mg were no more effective than the 400 mg dose. Dysmenorrhea For the treatment of dysmenorrhea, beginning with the earliest onset of such pain, ibuprofen tablets should be given in a dose of 400 mg every 4 hours as necessary for the relief of pain."
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purpose:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:id="@+id/add_to_diary_tv_purpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purpose Pain reliever"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caution:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:id="@+id/add_to_diary_tv_caution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop use and ask a doctor if an allergic reaction occurs. Seek medical help right away. you experience any of the following signs of stomach bleeding: feel faint have bloody or black stools vomit blood have stomach pain that does not get better pain gets worse or lasts more than 10 days fever gets worse or lasts more than 3 days redness or swelling is present ringing in the ears or loss of hearing occurs new symptoms occur These could be signs of a serious condition."
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dosage:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_dosage"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/primaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dosage"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                app:hintTextColor="@color/grey">
+
+                <EditText
+                    android:id="@+id/et_add_to_diary_dosage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start date:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_start_date"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint="12/08/2021"
+                    app:hintTextColor="@color/grey">
+
+                    <EditText
+                        android:id="@+id/et_add_to_diary_start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:inputType="none"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_add_to_diary_start_date"
+                    android:background="@drawable/button_round_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="Select Date"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finish date:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_finish_date"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:hintTextColor="@color/grey"
+                    android:hint="19/08/2021">
+
+                    <EditText
+                        android:id="@+id/et_add_to_diary_finish_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:focusable="false"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_add_to_diary_finish_date"
+                    android:background="@drawable/button_round_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="Select Date"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start time (time in day):"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_start_time_day"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:hintTextColor="@color/grey"
+                    android:hint="9:00">
+
+                    <EditText
+                        android:id="@+id/et_add_to_diary_start_time_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:focusable="false"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_add_to_diary_start_time_day"
+                    android:background="@drawable/button_round_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="Select Time"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Times per day:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_times_per_day"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/primaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="4"
+                app:hintTextColor="@color/grey"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp">
+
+                <EditText
+                    android:id="@+id/et_times_per_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:textColor="@android:color/black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hourly frequency:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_hourly_frequency"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@color/primaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="3"
+                app:hintTextColor="@color/grey"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:layout_marginBottom="15dp">
+
+                <EditText
+                    android:id="@+id/et_hourly_frequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:textColor="@android:color/black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btn_add_to_diary_cancel"
+                    android:background="@drawable/button_round_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Cancel"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_marginRight="40dp" />
+
+                <Button
+                    android:id="@+id/btn_add_to_diary_add_to_diary"
+                    android:background="@drawable/button_round_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Add to Diary"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

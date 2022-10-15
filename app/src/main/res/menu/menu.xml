@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_location"
+        android:icon="@drawable/ic_location"
+        android:title="Location"/>
+    <item
+        android:id="@+id/ic_diary"
+        android:icon="@drawable/ic_calendar"
+        android:title="Medicine Diary"/>
+    <item
+        android:id="@+id/ic_search"
+        android:icon="@drawable/ic_search"
+        android:title="Drug info"/>
+    <item
+        android:id="@+id/ic_person"
+        android:icon="@drawable/ic_person"
+        android:title="Profile"/>
+</menu>

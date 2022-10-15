@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/custom_medicine_to_diary_dialog_outline"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Allergy"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allergy: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_alergie"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/primaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Allergy"
+        android:layout_marginLeft="12sp"
+        android:layout_marginRight="12sp"
+        app:hintTextColor="@color/grey">
+
+        <EditText
+            android:id="@+id/et_add_alergie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_add_alergie_cancel"
+            android:background="@drawable/button_round_border"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginRight="40dp" />
+
+        <Button
+            android:id="@+id/btn_add_alergie_confirm"
+            android:background="@drawable/button_round_border"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Confirm"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginLeft="40dp"/>
+    </LinearLayout>
+</LinearLayout>

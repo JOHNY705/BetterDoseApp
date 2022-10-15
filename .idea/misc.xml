@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/OneDrive - Visoko uciliste Algebra/Faks/3. godina/2. semestar/OICAR/Projekt/BetterDose_MobileApplication/app/src/main/res/drawable/round_border.xml" value="0.22916666666666666" />
+        <entry key="..\:/OneDrive - Visoko uciliste Algebra/Faks/3. godina/2. semestar/OICAR/Projekt/BetterDose_MobileApplication/app/src/main/res/layout-v28/fragment_medicine_diary.xml" value="0.286231884057971" />
+        <entry key="..\:/OneDrive - Visoko uciliste Algebra/Faks/3. godina/2. semestar/OICAR/Projekt/BetterDose_MobileApplication/app/src/main/res/layout/activity_login.xml" value="0.10478771454381211" />
+        <entry key="..\:/OneDrive - Visoko uciliste Algebra/Faks/3. godina/2. semestar/OICAR/Projekt/BetterDose_MobileApplication/app/src/main/res/layout/activity_main.xml" value="0.10478771454381211" />
+        <entry key="..\:/OneDrive - Visoko uciliste Algebra/Faks/3. godina/2. semestar/OICAR/Projekt/BetterDose_MobileApplication/app/src/main/res/layout/drug_list_item.xml" value="0.25" />
+        <entry key="..\:/OneDrive - Visoko uciliste Algebra/Faks/3. godina/2. semestar/OICAR/Projekt/BetterDose_MobileApplication/app/src/main/res/layout/fragment_medicine_diary.xml" value="0.25" />
+        <entry key="..\:/OneDrive - Visoko uciliste Algebra/Faks/3. godina/2. semestar/OICAR/Projekt/BetterDose_MobileApplication/app/src/main/res/layout/fragment_medicine_search.xml" value="0.22" />
+        <entry key="..\:/OneDrive - Visoko uciliste Algebra/Faks/3. godina/2. semestar/OICAR/Projekt/BetterDose_MobileApplication/app/src/main/res/layout/fragment_register.xml" value="0.10478771454381211" />
+        <entry key="..\:/OneDrive - Visoko uciliste Algebra/Faks/3. godina/2. semestar/OICAR/Projekt/BetterDose_MobileApplication/app/src/main/res/layout/interaction_list_item.xml" value="0.33" />
+        <entry key="..\:/OneDrive - Visoko uciliste Algebra/Faks/3. godina/2. semestar/OICAR/Projekt/BetterDose_MobileApplication/app/src/main/res/layout/medication_list_item.xml" value="0.25" />
+        <entry key="..\:/Users/Ivan/Desktop/BetterDose_MobileApplication-master/app/src/main/res/drawable/custom_medicine_to_diary_dialog_outline.xml" value="0.2625" />
+        <entry key="..\:/Users/Ivan/Desktop/BetterDose_MobileApplication-master/app/src/main/res/drawable/ic_person.xml" value="0.2625" />
+        <entry key="..\:/Users/Ivan/Desktop/BetterDose_MobileApplication-master/app/src/main/res/layout/activity_login.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Ivan/Desktop/BetterDose_MobileApplication-master/app/src/main/res/layout/allergy_list_item.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Ivan/Desktop/BetterDose_MobileApplication-master/app/src/main/res/layout/dialog_add_to_diary.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Ivan/Desktop/BetterDose_MobileApplication-master/app/src/main/res/layout/dialog_time_picker.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Ivan/Desktop/BetterDose_MobileApplication-master/app/src/main/res/layout/fragment_location.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Ivan/Desktop/BetterDose_MobileApplication-master/app/src/main/res/layout/fragment_login.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Ivan/Desktop/BetterDose_MobileApplication-master/app/src/main/res/layout/fragment_medicine_diary.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Ivan/Desktop/BetterDose_MobileApplication-master/app/src/main/res/layout/fragment_register.xml" value="0.40217391304347827" />
+        <entry key="..\:/Users/Ivan/Desktop/BetterDose_MobileApplication-master/app/src/main/res/layout/medication_list_item.xml" value="0.40217391304347827" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

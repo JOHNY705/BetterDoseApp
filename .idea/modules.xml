@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BetterDose.iml" filepath="$PROJECT_DIR$/.idea/modules/BetterDose.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BetterDose.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BetterDose.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BetterDose.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BetterDose.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BetterDose.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BetterDose.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BetterDose.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BetterDose.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

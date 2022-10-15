@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbarStyle="outsideInset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/layout_padding_top"
+    android:paddingHorizontal="@dimen/container_padding"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/search_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_border"
+            android:drawableEnd="@drawable/ic_search"
+            android:ems="8"
+            android:hint="@string/what_are_you_looking_for"
+            android:inputType="textVisiblePassword"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/et_text_size"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_result_height"
+            android:visibility="invisible"
+            card_view:layout_constraintTop_toBottomOf="@+id/search_field"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/drug_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/search_result_height"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="@dimen/card_margin_horizontal"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="@dimen/card_corner_radius"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:layout_constraintTop_toBottomOf="@+id/search_field"
+            tools:layout_editor_absoluteY="15dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp">
+
+                <TextView
+                    android:id="@+id/drug_title"
+                    android:layout_width="match_parent"
+                    android:maxLines="3"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/element_margin"
+                    android:text="@string/medicine"
+                    android:textColor="@color/primaryIconColor"
+                    android:textSize="@dimen/title_text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/horizontal_rule_height"
+                    android:layout_marginHorizontal="@dimen/element_margin"
+                    android:layout_marginVertical="@dimen/view_margin"
+                    android:background="@color/primaryIconColor"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@id/drug_title" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/drug_info_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/scroll_view_search_height"
+                    android:layout_margin="@dimen/element_margin"
+                    android:backgroundTint="@android:color/white"
+                    android:orientation="vertical"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@id/drug_title">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/element_margin"
+                            android:gravity="top|left"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/description"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/et_text_size"
+                                tools:layout_editor_absoluteX="10dp"
+                                tools:layout_editor_absoluteY="12dp" />
+
+                            <TextView
+                                android:id="@+id/drug_description"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.5"
+                                android:text=""
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/et_text_size"
+                                tools:layout_editor_absoluteX="10dp"
+                                tools:layout_editor_absoluteY="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/element_margin"
+                            android:gravity="top|left"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/dosage"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/et_text_size"
+                                tools:layout_editor_absoluteX="10dp"
+                                tools:layout_editor_absoluteY="12dp" />
+
+                            <TextView
+                                android:id="@+id/drug_dosage"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.5"
+                                android:text=""
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/et_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/element_margin"
+                            android:gravity="top|left"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/purpose"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/et_text_size"
+                                tools:layout_editor_absoluteX="10dp"
+                                tools:layout_editor_absoluteY="12dp" />
+
+                            <TextView
+                                android:id="@+id/drug_purpose"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.5"
+                                android:text=""
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/et_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="@dimen/element_margin"
+                            android:gravity="top|left"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/caution"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/et_text_size"
+                                tools:layout_editor_absoluteX="10dp"
+                                tools:layout_editor_absoluteY="12dp" />
+
+                            <TextView
+                                android:id="@+id/drug_caution"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.5"
+                                android:text=""
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/et_text_size" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/element_margin"
+                    android:orientation="horizontal"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@id/drug_info_scroll">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_diary_add"
+                        style="@style/Widget.BetterDose.Button"
+                        android:layout_width="@dimen/diary_button_width"
+                        android:layout_height="@dimen/diary_button_height"
+                        android:layout_marginVertical="@dimen/text_input_layout_bottom_margin"
+                        android:layout_marginRight="@dimen/element_margin"
+                        android:text="@string/diary"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/et_text_size"
+                        app:icon="@drawable/ic_add"
+                        app:iconTint="@android:color/white" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_interactions_add"
+                        style="@style/Widget.BetterDose.Button"
+                        android:layout_width="@dimen/add_button_width"
+                        android:layout_height="@dimen/add_button_height"
+                        android:layout_marginVertical="@dimen/text_input_layout_bottom_margin"
+                        android:text="@string/interactions"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/et_text_size"
+                        app:icon="@drawable/ic_add"
+                        app:iconTint="@android:color/white" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/interaction_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/search_result_height"
+            android:layout_marginVertical="32dp"
+            android:layout_marginHorizontal="@dimen/card_margin_horizontal"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="@dimen/card_corner_radius"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:layout_constraintTop_toBottomOf="@+id/drug_card"
+            tools:layout_editor_absoluteY="15dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutInteractions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp">
+
+                <TextView
+                    android:id="@+id/interaction_title"
+                    android:layout_width="match_parent"
+                    android:maxLines="3"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/element_margin"
+                    android:text="@string/interactions"
+                    android:textColor="@color/primaryIconColor"
+                    android:textSize="@dimen/title_text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/horizontal_rule_height"
+                    android:layout_marginHorizontal="@dimen/element_margin"
+                    android:layout_marginVertical="@dimen/view_margin"
+                    android:background="@color/primaryIconColor"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@id/interaction_title" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/drug_interaction_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/element_margin"
+                    android:backgroundTint="@android:color/white"
+                    android:orientation="vertical"
+                    card_view:layout_constraintLeft_toLeftOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@id/interaction_title">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvInteractionDrugs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="@dimen/view_margin"
+                            android:background="@color/primaryIconColor" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvInteractions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
